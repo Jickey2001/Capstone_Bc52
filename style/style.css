@@ -1,98 +1,31 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-a{
-    text-decoration: none;
+/* header  */
+#search-box{
+    background-color: #fff;
+    border-radius: 30px;
 }
-body a, button, button:hover{
-    cursor: pointer;
-}
-.py-5{
-    padding-bottom: 3rem !important;
-    padding-top: 3rem !important;
-}
-/* .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm, .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
-    position: relative;
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-} */
-.container{
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0;
-    clear: both;
-}
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-size: 1.5rem;
-    font-weight: 400;
-    line-height: 28px;
-}
-/* footer  */
-.row{
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-footer a.logo{
-    font-size: 32px;
-    color: #fb811e;
-    padding: 0px;
-    position: relative;
-}
-footer a.logo:hover{
-    color: #060606;
-}
-footer a.logo i{
-    position: absolute;
-    top: -3px;
-    left: 54px;
-    font-size: 20px;
-}
-footer p.copy-text a{
-    color: #009f4d;
-}
-footer h3{
-    font-size: 20px;
-    line-height: 25px;
-    margin-bottom: 30px;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #060606;
-}
-footer .FooterContact a{
-    color: #707070;
-}
-.w3l-footer-16 .subscribe input[type="email"] {
-    background: #f4f4f4;
+#search-box #search-text{
     border: none;
-    padding: 12px 20px;
-    font-size: 16px;
     outline: none;
-    width: 80%;
-    color: #707070;
-    border: 1px solid #eee;
-    border-radius: 30px 0px 0px 30px;
+    background: none;
+    font-size: 18px;
+    width: 0;
+    padding: 0px;
+    transition: all 0.25s;
 }
-.w3l-footer-16 .subscribe button {
-        background:#009f4d;
-        border: none;
-        outline: none;
-        font-size: 16px;
-        padding: 12px 12px;
-        cursor: pointer;
-        width: 20%;
-        color: #fff;
-        border-radius: 0px 30px 30px 0px;
+#search-box:hover #search-text, #search-box #search-text:valid{
+    width: 300px;
+    padding: 10px 0px 10px 15px;
 }
-.w3l-footer-16 ul.social li {
-    display: inline-block;
-    margin-right: 5px;
+#search-box #search-btn{
+    background-color: #fff;
+    border: none;
+    padding: 15px 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
 }
