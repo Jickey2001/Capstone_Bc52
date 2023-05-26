@@ -22,16 +22,13 @@
 <body>
   <header>
     <div class="container">
-      <nav class="navbar navbar-expand-lg bg-dark">
+      <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="https://wp.w3layouts.com/farmstead/">Farmstead <i class="fa-solid fa-leaf"></i></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="collapse navbar-collapse" >
+            <ul class="navbar-nav me-auto mb-3 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link current_item active " aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">About</a>
@@ -49,11 +46,19 @@
                 <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
-            <form action="" id="search-box">
-              <input type="text" id="search-text"
-              placeholder="Search">
-              <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
+            <div class="search_button ml-lg-3">
+              <form action="" id="search-box">
+                <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" id="search-text"
+                placeholder="Search">
+                
+              </form>
+            </div>
+            <div style="width: 18rem;" class="mx-1 py-3">
+              <button class="btn" id="switchButton" title="Click to switch theme">
+                <i class="fa-regular fa-moon"></i>
+                <i class="fa-regular fa-sun"></i>
+              </button>
           </div>
         </div>
       </nav>
@@ -63,7 +68,46 @@
 
   </main>
   <footer>
-    <!-- place footer here -->
+    <div class="container py-4">
+      <div class="footer_content row">
+        <div class="footer_item col-4">
+          <h3>FIND US</h3>
+          <div class="text_left">
+            <p>Address: 10001 Alleghany st, 5th Avenue, 235 <br> Terry, London.</p>
+            <p class="mt-3">Phone: <a href="tel:+12 23456790">+12 23456790</a></p>
+            <p class="mt-3">Email: <a href="mailto:info@example.com">info@example.com</a></p>
+            <p class="mt-3">Fax: <a href="+ 11 367 21890">+ 11 367 21890</a></p>
+          </div>
+        </div>
+
+        <div class="footer_item col-4">
+          <div class="logo">
+            <h4><a href="https://wp.w3layouts.com/farmstead/">Farmstead <i class="fa-solid fa-leaf"></i></a></h4>
+          </div>
+          <p class="mt-4">Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam eget turpis ornare, euismod ligul aeget, enenatis dui.</p>
+          <p class="mt-4">© 2023 Farmstead. All Rights Reserved | WordPress Theme by <a  href="https://wp.w3layouts.com/farmstead/">W3Layouts.</a></p>
+        </div>
+        <div class="footer_item col-4">
+          <h3>NEWSLETTER</h3>
+          <div class="footer_sub">
+            <p>Subscribe to our mailing list and get updates to your email inbox.</p>
+            <form action="">
+              <input type="email" name="Email" placeholder="Email Address">
+              <button><i class="fa-solid fa-paper-plane"></i></button>
+            </form>
+            <ul class="mt-4 pt-2">
+              <li><a href="https://www.facebook.com/w3layouts/"><i class="fa-brands fa-facebook"></i></a></li>
+              <li><a href="https://in.linkedin.com/company/w3layouts"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="https://twitter.com/W3layouts"><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href="https://w3layouts.com/tag/email-templates/"><i class="fa-brands fa-google-plus-g"></i></a></li>
+              <li><a href="https://w3layouts.com/"><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
   </footer>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
